@@ -26,6 +26,18 @@
     widthMidpoint = windowWidth / 2;
     heightMidpoint = widthMidpoint / 2;
     
+    self.filterGroup = [[GPUImageFilterGroup alloc] init];
+    self.brightnessFilter = [[GPUImageBrightnessFilter alloc] init];
+    self.gaussianBlurFilter = [[GPUImageGaussianBlurFilter alloc] init];
+    self.contrastFilter = [[GPUImageContrastFilter alloc] init];
+    self.saturationFilter = [[GPUImageSaturationFilter alloc] init];
+    
+    self.alphaBlendFilter = [[GPUImageAlphaBlendFilter alloc] init];
+    
+    self.scratches = [[GPUImagePicture alloc] initWithImage:[UIImage imageNamed:@"scratches.png"]];
+    self.bubbles = [[GPUImagePicture alloc] initWithImage:[UIImage imageNamed:@"bubbles.ong"]];
+    
+    
     UIImage *inputImage = [UIImage imageNamed:@"kitten.jpg"];
     self.gr = [[UIGestureRecognizer alloc] init];
     self.gr.delegate = self;
@@ -33,24 +45,24 @@
     [self.imageView addGestureRecognizer:self.gr];
     self.sourcePicture = [[GPUImagePicture alloc] initWithImage:inputImage smoothlyScaleOutput:YES];
    
-    self.filterGroup = [[GPUImageFilterGroup alloc] init];
-    self.brightnessFilter = [[GPUImageBrightnessFilter alloc] init];
-    self.gaussianBlurFilter = [[GPUImageGaussianBlurFilter alloc] init];
-    self.contrastFilter = [[GPUImageContrastFilter alloc] init];
-    self.saturationFilter = [[GPUImageSaturationFilter alloc] init];
-    self.alphaBlendFilter = [[GPUImageAlphaBlendFilter alloc] init];
+        
     
-    
-    
-    [self.brightnessFilter forceProcessingAtSize:self.imageView.sizeInPixels]; // This is now needed to make the filter run at the smaller output size
-    
-    [self.brightnessFilter addTarget:self.saturationFilter];
-    self.filterGroup.initialFilters = [NSArray arrayWithObjects:self.brightnessFilter, nil];
-    self.filterGroup.terminalFilter = self.saturationFilter;
-    
-    [self.sourcePicture addTarget:self.filterGroup];
-    [self.filterGroup addTarget:self.imageView];
+    //pass one
+    [self.sourcePicture addTarget:self.alphaBlendFilter];
+    [self.scratches addTarget:self.alphaBlendFilter];
+    [self.alphaBlendFilter addTarget:self.imageView];
+    [self.scratches processImage];
     [self.sourcePicture processImage];
+    
+//    [self.brightnessFilter forceProcessingAtSize:self.imageView.sizeInPixels]; // This is now needed to make the filter run at the smaller output size
+//    
+//    [self.brightnessFilter addTarget:self.saturationFilter];
+//    self.filterGroup.initialFilters = [NSArray arrayWithObjects:self.brightnessFilter, nil];
+//    self.filterGroup.terminalFilter = self.saturationFilter;
+//    
+//    [self.sourcePicture addTarget:self.filterGroup];
+//    [self.filterGroup addTarget:self.imageView];
+//    [self.sourcePicture processImage];
 
 	// Do any additional setup after loading the view, typically from a nib.
 }

@@ -155,18 +155,21 @@
 		944D976D1656659D003D4262 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944D976C1656659D003D4262 /* CoreVideo.framework */; };
 		944D976F165665BA003D4262 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944D976E165665BA003D4262 /* AVFoundation.framework */; };
 		944D9771165665F3003D4262 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944D9770165665F3003D4262 /* CoreMedia.framework */; };
-		944D977316566603003D4262 /* kitten.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 944D977216566603003D4262 /* kitten.jpg */; };
+		944D983D165A2D90003D4262 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 944D9833165A2D90003D4262 /* ViewController.m */; };
+		944D983E165A2D90003D4262 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 944D9836165A2D90003D4262 /* InfoPlist.strings */; };
+		944D983F165A2D90003D4262 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944D9838165A2D90003D4262 /* MainStoryboard.storyboard */; };
+		944D9841165A2D90003D4262 /* kitten.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 944D983C165A2D90003D4262 /* kitten.jpg */; };
+		944D9846165A2DA4003D4262 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 944D9844165A2DA4003D4262 /* AppDelegate.m */; };
+		944D9847165A2DA4003D4262 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 944D9845165A2DA4003D4262 /* Default-568h@2x.png */; };
+		944D9850165A2DB2003D4262 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 944D9848165A2DB2003D4262 /* Default.png */; };
+		944D9851165A2DB2003D4262 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 944D9849165A2DB2003D4262 /* Default@2x.png */; };
+		944D9854165A2DB2003D4262 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 944D984F165A2DB2003D4262 /* main.m */; };
+		944D9856165A2E8C003D4262 /* SwipeToFilter-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 944D9855165A2E8C003D4262 /* SwipeToFilter-Info.plist */; };
+		944D9859165A303D003D4262 /* scratches.png in Resources */ = {isa = PBXBuildFile; fileRef = 944D9857165A303C003D4262 /* scratches.png */; };
+		944D985A165A303D003D4262 /* bubbles.png in Resources */ = {isa = PBXBuildFile; fileRef = 944D9858165A303C003D4262 /* bubbles.png */; };
 		94D4209616564564002B6951 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D4209516564564002B6951 /* UIKit.framework */; };
 		94D4209816564564002B6951 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D4209716564564002B6951 /* Foundation.framework */; };
 		94D4209A16564564002B6951 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D4209916564564002B6951 /* CoreGraphics.framework */; };
-		94D420A016564564002B6951 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 94D4209E16564564002B6951 /* InfoPlist.strings */; };
-		94D420A216564564002B6951 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D420A116564564002B6951 /* main.m */; };
-		94D420A616564564002B6951 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D420A516564564002B6951 /* AppDelegate.m */; };
-		94D420A816564564002B6951 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 94D420A716564564002B6951 /* Default.png */; };
-		94D420AA16564564002B6951 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94D420A916564564002B6951 /* Default@2x.png */; };
-		94D420AC16564564002B6951 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94D420AB16564564002B6951 /* Default-568h@2x.png */; };
-		94D420AF16564564002B6951 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94D420AD16564564002B6951 /* MainStoryboard.storyboard */; };
-		94D420B216564564002B6951 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D420B116564564002B6951 /* ViewController.m */; };
 		94D420BA16564564002B6951 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D420B916564564002B6951 /* SenTestingKit.framework */; };
 		94D420BB16564564002B6951 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D4209516564564002B6951 /* UIKit.framework */; };
 		94D420BC16564564002B6951 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D4209716564564002B6951 /* Foundation.framework */; };
@@ -478,23 +481,25 @@
 		944D976C1656659D003D4262 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		944D976E165665BA003D4262 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		944D9770165665F3003D4262 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		944D977216566603003D4262 /* kitten.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kitten.jpg; sourceTree = "<group>"; };
+		944D9833165A2D90003D4262 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = SOURCE_ROOT; };
+		944D9834165A2D90003D4262 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = SOURCE_ROOT; };
+		944D9837165A2D90003D4262 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		944D9839165A2D90003D4262 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		944D983A165A2D90003D4262 /* SwipeToFilter-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SwipeToFilter-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		944D983C165A2D90003D4262 /* kitten.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kitten.jpg; sourceTree = SOURCE_ROOT; };
+		944D9843165A2DA4003D4262 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		944D9844165A2DA4003D4262 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		944D9845165A2DA4003D4262 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		944D9848165A2DB2003D4262 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = SOURCE_ROOT; };
+		944D9849165A2DB2003D4262 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = SOURCE_ROOT; };
+		944D984F165A2DB2003D4262 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
+		944D9855165A2E8C003D4262 /* SwipeToFilter-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SwipeToFilter-Info.plist"; sourceTree = SOURCE_ROOT; };
+		944D9857165A303C003D4262 /* scratches.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scratches.png; sourceTree = "<group>"; };
+		944D9858165A303C003D4262 /* bubbles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubbles.png; sourceTree = "<group>"; };
 		94D4209116564564002B6951 /* SwipeToFilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeToFilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D4209516564564002B6951 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		94D4209716564564002B6951 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		94D4209916564564002B6951 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		94D4209D16564564002B6951 /* SwipeToFilter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SwipeToFilter-Info.plist"; sourceTree = "<group>"; };
-		94D4209F16564564002B6951 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		94D420A116564564002B6951 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		94D420A316564564002B6951 /* SwipeToFilter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwipeToFilter-Prefix.pch"; sourceTree = "<group>"; };
-		94D420A416564564002B6951 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		94D420A516564564002B6951 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		94D420A716564564002B6951 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		94D420A916564564002B6951 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		94D420AB16564564002B6951 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		94D420AE16564564002B6951 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		94D420B016564564002B6951 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		94D420B116564564002B6951 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		94D420B816564564002B6951 /* SwipeToFilterTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwipeToFilterTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D420B916564564002B6951 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		94D420C116564564002B6951 /* SwipeToFilterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SwipeToFilterTests-Info.plist"; sourceTree = "<group>"; };
@@ -827,6 +832,15 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		944D9835165A2D90003D4262 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				944D9836165A2D90003D4262 /* InfoPlist.strings */,
+				944D9838165A2D90003D4262 /* MainStoryboard.storyboard */,
+			);
+			path = en.lproj;
+			sourceTree = SOURCE_ROOT;
+		};
 		94D4208616564564002B6951 = {
 			isa = PBXGroup;
 			children = (
@@ -866,12 +880,18 @@
 		94D4209B16564564002B6951 /* SwipeToFilter */ = {
 			isa = PBXGroup;
 			children = (
-				944D977216566603003D4262 /* kitten.jpg */,
-				94D420A416564564002B6951 /* AppDelegate.h */,
-				94D420A516564564002B6951 /* AppDelegate.m */,
-				94D420AD16564564002B6951 /* MainStoryboard.storyboard */,
-				94D420B016564564002B6951 /* ViewController.h */,
-				94D420B116564564002B6951 /* ViewController.m */,
+				944D9857165A303C003D4262 /* scratches.png */,
+				944D9858165A303C003D4262 /* bubbles.png */,
+				944D9848165A2DB2003D4262 /* Default.png */,
+				944D9849165A2DB2003D4262 /* Default@2x.png */,
+				944D984F165A2DB2003D4262 /* main.m */,
+				944D9843165A2DA4003D4262 /* AppDelegate.h */,
+				944D9844165A2DA4003D4262 /* AppDelegate.m */,
+				944D9845165A2DA4003D4262 /* Default-568h@2x.png */,
+				944D9833165A2D90003D4262 /* ViewController.m */,
+				944D9834165A2D90003D4262 /* ViewController.h */,
+				944D9835165A2D90003D4262 /* en.lproj */,
+				944D983C165A2D90003D4262 /* kitten.jpg */,
 				94D4209C16564564002B6951 /* Supporting Files */,
 			);
 			path = SwipeToFilter;
@@ -880,13 +900,9 @@
 		94D4209C16564564002B6951 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				94D4209D16564564002B6951 /* SwipeToFilter-Info.plist */,
-				94D4209E16564564002B6951 /* InfoPlist.strings */,
-				94D420A116564564002B6951 /* main.m */,
-				94D420A316564564002B6951 /* SwipeToFilter-Prefix.pch */,
-				94D420A716564564002B6951 /* Default.png */,
-				94D420A916564564002B6951 /* Default@2x.png */,
-				94D420AB16564564002B6951 /* Default-568h@2x.png */,
+				944D9855165A2E8C003D4262 /* SwipeToFilter-Info.plist */,
+				944D983A165A2D90003D4262 /* SwipeToFilter-Prefix.pch */,
+				94D420C216564564002B6951 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -894,6 +910,7 @@
 		94D420BF16564564002B6951 /* SwipeToFilterTests */ = {
 			isa = PBXGroup;
 			children = (
+				94D420C116564564002B6951 /* SwipeToFilterTests-Info.plist */,
 				94D420C516564564002B6951 /* SwipeToFilterTests.h */,
 				94D420C616564564002B6951 /* SwipeToFilterTests.m */,
 				94D420C016564564002B6951 /* Supporting Files */,
@@ -904,8 +921,6 @@
 		94D420C016564564002B6951 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				94D420C116564564002B6951 /* SwipeToFilterTests-Info.plist */,
-				94D420C216564564002B6951 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -981,12 +996,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94D420A016564564002B6951 /* InfoPlist.strings in Resources */,
-				94D420A816564564002B6951 /* Default.png in Resources */,
-				94D420AA16564564002B6951 /* Default@2x.png in Resources */,
-				94D420AC16564564002B6951 /* Default-568h@2x.png in Resources */,
-				94D420AF16564564002B6951 /* MainStoryboard.storyboard in Resources */,
-				944D977316566603003D4262 /* kitten.jpg in Resources */,
+				944D983E165A2D90003D4262 /* InfoPlist.strings in Resources */,
+				944D983F165A2D90003D4262 /* MainStoryboard.storyboard in Resources */,
+				944D9841165A2D90003D4262 /* kitten.jpg in Resources */,
+				944D9847165A2DA4003D4262 /* Default-568h@2x.png in Resources */,
+				944D9850165A2DB2003D4262 /* Default.png in Resources */,
+				944D9851165A2DB2003D4262 /* Default@2x.png in Resources */,
+				944D9856165A2E8C003D4262 /* SwipeToFilter-Info.plist in Resources */,
+				944D9859165A303D003D4262 /* scratches.png in Resources */,
+				944D985A165A303D003D4262 /* bubbles.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1021,9 +1039,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94D420A216564564002B6951 /* main.m in Sources */,
-				94D420A616564564002B6951 /* AppDelegate.m in Sources */,
-				94D420B216564564002B6951 /* ViewController.m in Sources */,
 				944D96C21656604A003D4262 /* GLProgram.m in Sources */,
 				944D96C31656604A003D4262 /* GPUImage3x3ConvolutionFilter.m in Sources */,
 				944D96C41656604A003D4262 /* GPUImage3x3TextureSamplingFilter.m in Sources */,
@@ -1167,6 +1182,9 @@
 				944D974E1656604A003D4262 /* GPUImageWeakPixelInclusionFilter.m in Sources */,
 				944D974F1656604A003D4262 /* GPUImageWhiteBalanceFilter.m in Sources */,
 				944D97501656604A003D4262 /* GPUImageXYDerivativeFilter.m in Sources */,
+				944D983D165A2D90003D4262 /* ViewController.m in Sources */,
+				944D9846165A2DA4003D4262 /* AppDelegate.m in Sources */,
+				944D9854165A2DB2003D4262 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1189,18 +1207,18 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		94D4209E16564564002B6951 /* InfoPlist.strings */ = {
+		944D9836165A2D90003D4262 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				94D4209F16564564002B6951 /* en */,
+				944D9837165A2D90003D4262 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		94D420AD16564564002B6951 /* MainStoryboard.storyboard */ = {
+		944D9838165A2D90003D4262 /* MainStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				94D420AE16564564002B6951 /* en */,
+				944D9839165A2D90003D4262 /* en */,
 			);
 			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
@@ -1211,7 +1229,8 @@
 				94D420C316564564002B6951 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
+			path = SwipeToFilterTests;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXVariantGroup section */
 
@@ -1271,7 +1290,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SwipeToFilter/SwipeToFilter-Prefix.pch";
-				INFOPLIST_FILE = "SwipeToFilter/SwipeToFilter-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SwipeToFilter-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -1283,7 +1302,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SwipeToFilter/SwipeToFilter-Prefix.pch";
-				INFOPLIST_FILE = "SwipeToFilter/SwipeToFilter-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SwipeToFilter-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

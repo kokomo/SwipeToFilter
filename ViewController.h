@@ -21,6 +21,7 @@
 @property (strong) GPUImagePicture *sourcePicture;
 @property (strong) GPUImageFilterGroup *filterGroup;
 @property (strong) UIGestureRecognizer *gr;
-
+@property (strong) GPUImagePicture *scratches;
+@property (strong) GPUImagePicture *bubbles;
 
 @end
