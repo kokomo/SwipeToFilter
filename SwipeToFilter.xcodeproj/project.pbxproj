@@ -175,6 +175,7 @@
 		94D420BC16564564002B6951 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D4209716564564002B6951 /* Foundation.framework */; };
 		94D420C416564564002B6951 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 94D420C216564564002B6951 /* InfoPlist.strings */; };
 		94D420C716564564002B6951 /* SwipeToFilterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D420C616564564002B6951 /* SwipeToFilterTests.m */; };
+		FAA9F529166294D9001E1C76 /* samplephoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAA9F528166294D9001E1C76 /* samplephoto.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -506,6 +507,7 @@
 		94D420C316564564002B6951 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		94D420C516564564002B6951 /* SwipeToFilterTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwipeToFilterTests.h; sourceTree = "<group>"; };
 		94D420C616564564002B6951 /* SwipeToFilterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwipeToFilterTests.m; sourceTree = "<group>"; };
+		FAA9F528166294D9001E1C76 /* samplephoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = samplephoto.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -880,6 +882,7 @@
 		94D4209B16564564002B6951 /* SwipeToFilter */ = {
 			isa = PBXGroup;
 			children = (
+				FAA9F528166294D9001E1C76 /* samplephoto.jpg */,
 				944D9857165A303C003D4262 /* scratches.png */,
 				944D9858165A303C003D4262 /* bubbles.png */,
 				944D9848165A2DB2003D4262 /* Default.png */,
@@ -1005,6 +1008,7 @@
 				944D9856165A2E8C003D4262 /* SwipeToFilter-Info.plist in Resources */,
 				944D9859165A303D003D4262 /* scratches.png in Resources */,
 				944D985A165A303D003D4262 /* bubbles.png in Resources */,
+				FAA9F529166294D9001E1C76 /* samplephoto.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
